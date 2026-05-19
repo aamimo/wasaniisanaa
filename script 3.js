@@ -40,19 +40,21 @@
     })
   );
 
-  if(toggle && nav) {
-    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+  if (toggle && nav) {
+    toggle.addEventListener("click", function() {
+      nav.classList.toggle("open");
+    });
   }
   
   window.addEventListener("popstate", fromHash);
   fromHash();
 
-  // Custom Formspree redirect validation
+  // Custom Formspree silent validation redirection
   const form = document.getElementById("contactForm");
   if (form) {
     form.addEventListener("submit", async function(e) {
       e.preventDefault();
-      const submitBtn = form.querySelector('button[type="submit"]');
+      const submitBtn = form.querySelector('button[type=\"submit\"]');
       const originalText = submitBtn.innerHTML;
       
       submitBtn.disabled = true;
