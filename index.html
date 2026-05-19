@@ -1,213 +1,253 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Wasanii Sanaa — Art for Change, Voice for All</title>
-<meta name="description" content="A bold Kibera-based youth movement using performing arts to drive peace, rights, mentorship and health since 2013." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wasanii Sanaa — Unity Gives Strength</title>
+  <meta name="description" content="A community-based youth organization in Kibera empowering marginalized communities through the power of performing arts and edutainment." />
+  <link rel="icon" href="assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<!-- NOISE / GRAIN -->
-<div class="grain" aria-hidden="true"></div>
 
-<!-- HEADER -->
-<header class="nav" id="nav">
-  <a href="#top" class="brand">
-    <span class="brand-mark">WS</span>
-    <span class="brand-text">
-      <strong>Wasanii Sanaa</strong>
-      <em>Art · Voice · Change</em>
-    </span>
-  </a>
-  <nav class="nav-links" id="navLinks">
-    <a href="#about">About</a>
-    <a href="#programs">Programs</a>
-    <a href="#impact">Impact</a>
-    <a href="#stories">Stories</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <a href="#contact" class="cta-pill">Partner <span>→</span></a>
-  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+<header class="header">
+  <div class="container header-inner">
+    <a href="#home" class="brand" data-link="home">
+      <img src="assets/logo.jpg" alt="Wasanii Sanaa logo" />
+      <div class="brand-text"><strong>Wasanii Sanaa</strong><span>Youth Organization</span></div>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home" data-link="home">Home</a>
+      <a href="#about" data-link="about">About</a>
+      <a href="#gallery" data-link="gallery">Gallery</a>
+      <a href="#programs" data-link="programs">Programs</a>
+      <a href="#contact" data-link="contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-donate-header" href="#contact" data-link="contact">Get Involved</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+  </div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-inner">
-    <span class="eyebrow">Est. 2013 · Kibera, Nairobi</span>
-    <h1 class="display">
-      <span class="line">Theatre that</span>
-      <span class="line outline">moves a</span>
-      <span class="line accent">community.</span>
-    </h1>
-    <p class="lede">We are a community-based youth movement turning stages, streets and schools into spaces for peace, rights and bold conversation.</p>
-    <div class="hero-ctas">
-      <a href="#programs" class="btn btn-primary">Explore programs</a>
-      <a href="#stories" class="btn btn-ghost">Watch our story</a>
+<section class="page" id="page-home">
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-img" style="background-image:url('assets/photo8.jpg')"></div>
+    <div class="container hero-inner">
+      <span class="badge">Art for Change · Voice for All</span>
+      <h1>Unity Gives <span class="accent">Strength.</span></h1>
+      <p>Wasanii Sanaa is a community-based youth organization founded in 2013 and registered with the Kenyan Ministry of Gender, Sports, Culture and Social Services. Operating right out of Kibera settlement to drive constructive social change.</p>
+      <div class="actions">
+        <a class="btn btn-white" href="#about" data-link="about">Read Profile</a>
+        <a class="btn btn-yellow" href="#programs" data-link="programs">Explore Activities</a>
+      </div>
     </div>
-    <div class="hero-marquee" aria-hidden="true">
-      <div class="track">
-        <span>Peace Building</span><span>★</span>
-        <span>Human Rights</span><span>★</span>
-        <span>Mentorship</span><span>★</span>
-        <span>SRHR &amp; Maternal Health</span><span>★</span>
-        <span>Theatre for Development</span><span>★</span>
-        <span>Peace Building</span><span>★</span>
-        <span>Human Rights</span><span>★</span>
-        <span>Mentorship</span><span>★</span>
-        <span>SRHR &amp; Maternal Health</span><span>★</span>
-        <span>Theatre for Development</span><span>★</span>
+    <div class="accent-bar"></div>
+  </div>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat"><div class="stat-num">2013</div><div class="stat-label">Year Founded</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Global Partners</div></div>
+      <div class="stat"><div class="stat-num">Kibera</div><div class="stat-label">Headquarters</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Youth Driven</div></div>
+    </div>
+  </div>
+
+  <div class="container section two-col">
+    <div>
+      <h2>Empowering communities through performing arts.</h2>
+      <p class="lead">We focus heavily on addressing critical grassroots challenges like poverty, gender inequality, and human rights violations by cleanly blending community entertainment with practical education.</p>
+      <a href="#about" data-link="about" style="display:inline-block;margin-top:24px;color:var(--brand-blue);font-weight:600;">View our core goals →</a>
+    </div>
+    
+    <div class="photo-grid">
+      <img src="assets/photo2.jpg" alt="Wasanii Sanaa Community Theatre" />
+      <img src="assets/photo15.jpg" alt="Edutainment Sessions" />
+    </div>
+  </div>
+
+  <div class="values-bg">
+    <div class="container section" style="padding:96px 24px;">
+      <h2 style="text-align:center;">Our Core Objectives</h2>
+      <div class="values">
+        <div class="value-card"><div class="bar" style="background:var(--brand-blue)"></div><h3>Talent Nurturing</h3></div>
+        <div class="value-card"><div class="bar" style="background:var(--brand-green)"></div><h3>Community Building</h3></div>
+        <div class="value-card"><div class="bar" style="background:var(--brand-yellow)"></div><h3>Skills Development</h3></div>
+        <div class="value-card"><div class="bar" style="background:var(--brand-red)"></div><h3>Employment Creation</h3></div>
+        <div class="value-card"><div class="bar" style="background:var(--brand-blue-deep)"></div><h3>Program Networking</h3></div>
       </div>
     </div>
   </div>
-  <div class="hero-art" aria-hidden="true">
-    <div class="blob b1"></div>
-    <div class="blob b2"></div>
-    <div class="blob b3"></div>
-    <div class="hero-photo"></div>
+
+  <div class="container section">
+    <div class="cta-card">
+      <div class="cta-img" style="background-image:url('assets/photo20.jpg')"></div>
+      <h2>Art speaks to the heart and the mind.</h2>
+      <p>It transforms by making the invisible visible, giving voice to the unheard, and moving people from awareness to action.</p>
+      <a class="btn btn-yellow" style="margin-top:28px;" href="#contact" data-link="contact">Contact Us</a>
+    </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="stats">
-  <div class="stat"><span class="num" data-count="12">0</span><span class="lbl">Years on stage</span></div>
-  <div class="stat"><span class="num" data-count="40">0</span><span class="lbl">Communities reached</span></div>
-  <div class="stat"><span class="num" data-count="15000">0</span><span class="lbl">Youth engaged</span></div>
-  <div class="stat"><span class="num" data-count="25">0</span><span class="lbl">Partner NGOs</span></div>
-</section>
+<section class="page" id="page-about">
+  <div class="container section">
+    <span class="eyebrow">About Us</span>
+    <h1 style="margin-top:12px;font-size:clamp(36px,6vw,64px);font-weight:800;letter-spacing:-0.02em;">More than a grassroots initiative.</h1>
+    <p class="lead" style="font-size:20px;">Wasanii Sanaa operates as a self-organized group empowering marginalized populations through the dynamic power of performing arts and active community involvement.</p>
 
-<!-- ABOUT -->
-<section class="section about" id="about">
-  <div class="section-head">
-    <span class="kicker">01 — Who we are</span>
-    <h2>Born in Kibera, built for change.</h2>
-  </div>
-  <div class="about-grid">
-    <article class="card pillar">
-      <span class="pill">Vision</span>
-      <p>A just, peaceful and empowered society where every voice — especially the marginalized — is heard through art.</p>
-    </article>
-    <article class="card pillar">
-      <span class="pill">Mission</span>
-      <p>To use participatory and forum theatre as edutainment for advocacy, dialogue and capacity-building across Kenya.</p>
-    </article>
-    <article class="card pillar">
-      <span class="pill">Motto</span>
-      <p>Unity gives strength. Art for change, voice for all.</p>
-    </article>
-  </div>
-</section>
+    <div class="mv-grid">
+      <div class="mv-card">
+        <h2>Our Mission</h2>
+        <p>To empower youth and marginalized communities to drive Social Justice, Human rights, and sustainable change through innovative, art-based education and advocacy.</p>
+      </div>
+      <div class="mv-card">
+        <h2>Our Vision</h2>
+        <p>A vibrant, Equitable society where every youth voice shapes a just future through the transformative power of art.</p>
+      </div>
+    </div>
 
-<!-- PROGRAMS -->
-<section class="section programs" id="programs">
-  <div class="section-head">
-    <span class="kicker">02 — What we do</span>
-    <h2>Five pillars. One stage.</h2>
-  </div>
-  <div class="prog-list">
-    <a class="prog" href="#contact">
-      <span class="num">01</span>
-      <h3>Peace Building</h3>
-      <p>Performances and workshops that resolve conflict and weave unity across tribal and clan lines.</p>
-      <span class="arrow">→</span>
-    </a>
-    <a class="prog" href="#contact">
-      <span class="num">02</span>
-      <h3>Human Rights</h3>
-      <p>Engaging awareness on governance, GBV, police brutality, addiction and early marriages.</p>
-      <span class="arrow">→</span>
-    </a>
-    <a class="prog" href="#contact">
-      <span class="num">03</span>
-      <h3>Mentorship</h3>
-      <p>School and community programs that build resilience, retention and life skills for adolescents.</p>
-      <span class="arrow">→</span>
-    </a>
-    <a class="prog" href="#contact">
-      <span class="num">04</span>
-      <h3>Health · SRHR</h3>
-      <p>Interactive theatre and radio that bust myths and connect communities to essential services.</p>
-      <span class="arrow">→</span>
-    </a>
-    <a class="prog" href="#contact">
-      <span class="num">05</span>
-      <h3>Theatre for Development</h3>
-      <p>Forum theatre that makes the invisible visible — turning awareness into collective action.</p>
-      <span class="arrow">→</span>
-    </a>
-  </div>
-</section>
+    <div class="story">
+      <h2>Our Profile & Background</h2>
+      <p>Headquartered in the heart of Kibera informal settlement, Wasanii Sanaa uses <strong>edutainment</strong>—a fusion of education and entertainment—as a tool for advocacy and capacity-building. Our work emphasizes Theatre for Development, which involves interactive performances that spark rich community dialogues on pressing local matters.</p>
+      <p>As a learning organization, Wasanii Sanaa is consistently focused on learning, reflecting, and incorporating innovative design ideas across all its social projects. We truly embody the potential of the youth to lead, change, and make a massive difference.</p>
+    </div>
 
-<!-- IMPACT TIMELINE -->
-<section class="section impact" id="impact">
-  <div class="section-head">
-    <span class="kicker">03 — Milestones</span>
-    <h2>A decade of stages, streets and schools.</h2>
-  </div>
-  <ol class="timeline">
-    <li><span class="yr">2013</span><div><h4>Founded in Kibera</h4><p>A small group of young artists takes the stage to confront post-election tensions.</p></div></li>
-    <li><span class="yr">2016</span><div><h4>National festivals</h4><p>Selected to perform at national arts festivals, scaling our message beyond Nairobi.</p></div></li>
-    <li><span class="yr">2019</span><div><h4>NGO collaborations</h4><p>Partnerships with leading rights and health organizations multiply our reach.</p></div></li>
-    <li><span class="yr">2022</span><div><h4>Award recognition</h4><p>Recognized for innovation in Theatre for Development across East Africa.</p></div></li>
-    <li><span class="yr">2025</span><div><h4>15,000+ youth engaged</h4><p>From slum schools to county halls — a movement that keeps growing.</p></div></li>
-  </ol>
-</section>
-
-<!-- STORIES / QUOTE -->
-<section class="section stories" id="stories">
-  <blockquote class="pull">
-    <p>“Theatre transforms by making the invisible visible — and giving voice to the unheard.”</p>
-    <footer>— A Wasanii Sanaa actor, Kibera</footer>
-  </blockquote>
-</section>
-
-<!-- GALLERY -->
-<section class="section gallery" id="gallery">
-  <div class="section-head">
-    <span class="kicker">04 — Through our lens</span>
-    <h2>Color, motion, community.</h2>
-  </div>
-  <div class="gal">
-    <figure class="g g1"></figure>
-    <figure class="g g2"></figure>
-    <figure class="g g3"></figure>
-    <figure class="g g4"></figure>
-    <figure class="g g5"></figure>
-    <figure class="g g6"></figure>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-  <div class="contact-wrap">
-    <div>
-      <span class="kicker">05 — Let's build</span>
-      <h2>Partner with us.</h2>
-      <p class="lede">Funders, schools, artists, journalists — there's a stage waiting for you.</p>
-      <ul class="contact-list">
-        <li><strong>Location</strong><span>Kibera, Nairobi, Kenya</span></li>
-        <li><strong>Phone</strong><span>+254 713 844 890</span></li>
-        <li><strong>Email</strong><span>wasaniisanaa@gmail.com</span></li>
+    <h2 style="text-align:center;margin-top:80px;">Key Achievements</h2>
+    <div class="story" style="margin-top:24px; background: var(--card); border: 1px solid var(--border); padding: 32px; border-radius: 18px;">
+      <ul style="list-style-type: none; padding: 0; display: grid; gap: 16px;">
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Participated in the 2025 XVIII Festival Sztuki Ludowej in Poland and Sanio Mondial Festivals in Italy.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Created awareness on peaceful coexistence in different communities with Life & Peace Institute and Mercy Corps Kenya.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Empowered communities on the reduction of GBV alongside Gender Violence Recovery Centre and Women Empowerment Link.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Conducted interactive community theatre on corruption dynamics with Transparency International Kenya.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Created awareness on human rights education both in schools and communities with Amnesty International Kenya.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Reduced stigma and discrimination against people living with HIV/AIDS through National Aids Control Council theater tools.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Participated in the International Nairobi Trade Fair consistently from 2014 to 2025.</li>
+        <li style="padding-left: 24px; position: relative;"><span style="position:absolute; left:0; color:var(--brand-green);">✔</span> Named the 2018 Gender Throne Winners organized by the Centre for Rights Education and Awareness (CREAW).</li>
       </ul>
     </div>
-    <form id="contactForm" class="contact-form">
-      <label>Name<input required name="name" placeholder="Your name" /></label>
-      <label>Email<input required type="email" name="email" placeholder="you@example.com" /></label>
-      <label>Message<textarea required name="message" rows="5" placeholder="How would you like to collaborate?"></textarea></label>
-      <button class="btn btn-primary" type="submit">Send message →</button>
-    </form>
+
+    <h2 style="text-align:center;margin-top:80px;">Leadership & Inquiries</h2>
+    <div class="ceo-card" style="margin-top:30px;">
+      <div class="ceo-info" style="padding-left:0;">
+        <span class="role">Organization Representative</span>
+        <h3>Vincent Kenvin</h3>
+        <p class="bio">For general inquiries, strategic partnerships, project sponsorships, or performance bookings, reach out to our administration desk.</p>
+        <div class="meta" style="margin-top:15px;">
+          <div><strong>Phone:</strong> <a href="tel:+254713844890">+254 713 844 890</a></div>
+          <div><strong>Email:</strong> <a href="mailto:wasaniisanaa@gmail.com">wasaniisanaa@gmail.com</a></div>
+          <div><strong>Based in:</strong> Kibera, Nairobi, Kenya</div>
+        </div>
+        <div class="stripe"></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<footer class="foot">
-  <div>© <span id="yr"></span> Wasanii Sanaa Organization · Kibera, Nairobi</div>
-  <div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
+<section class="page" id="page-gallery">
+  <div class="container section">
+    <span class="eyebrow">Gallery</span>
+    <h1 style="margin-top:12px;font-size:clamp(36px,6vw,72px);font-weight:800;letter-spacing:-0.02em;">Moments that Move Us.</h1>
+    <p class="lead">A glimpse into the everyday interactive sessions and performances of Wasanii Sanaa.</p>
+    <div class="photo-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top:40px;">
+      <img src="assets/photo2.jpg" alt="Festival Performance" />
+      <img src="assets/photo15.jpg" alt="Community Dialogue" />
+      <img src="assets/photo8.jpg" alt="Youth Gathering" />
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page-programs">
+  <div class="container section">
+    <span class="eyebrow">What We Do</span>
+    <h1 style="margin-top:12px;font-size:clamp(36px,6vw,72px);font-weight:800;letter-spacing:-0.02em;">Core Action Hubs.</h1>
+    <p class="lead">We utilize targeted participatory frameworks to advocate for sustainable socio-economic growth.</p>
+    
+    <div class="mv-grid" style="grid-template-columns:1fr; gap:24px;">
+      <div class="mv-card">
+        <h3>1. Peace Building Initiative</h3>
+        <p>Using performing art to resolve deep-seated community conflicts and actively promote sustainable unity. Our work includes structured community performances and workshops that encourage safe dialogue across tribal and clan lines, directly contributing to peace networks inside the urban areas.</p>
+      </div>
+      <div class="mv-card">
+        <h3>2. Human Rights Education</h3>
+        <p>Collaborating with global partners to tackle heavy grassroots operational issues such as structural governance, systemic poverty, drug addiction, early child marriages, police brutality, and gender-based violence (GBV). We ensure discussions remain thoroughly interactive rather than typical lectures.</p>
+      </div>
+      <div class="mv-card">
+        <h3>3. Mentorship Frameworks</h3>
+        <p>Tailored programs for adolescent students within schools and neighborhoods. Encompassing both boys and girls, we emphasize personal retention rates, boosting academic baseline outputs, and equipping teenagers with life skills to structurally decrease early pregnancies.</p>
+      </div>
+      <div class="mv-card">
+        <h3>4. Health Interventions (SRHR & MHR)</h3>
+        <p>Comprehensive health sensitization addressing Sexual Reproductive Health Rights and Maternal Health Rights. We work to lower unintended youth pregnancies and completely eliminate systemic myths or misconceptions via interactive forums, radio talk shows, and field events.</p>
+      </div>
+      <div class="mv-card">
+        <h3>5. Theatre for Development (TfD)</h3>
+        <p>Utilizing Participatory Educative Theatre or Forum Theatre structures to put operational control back into community hands. Performances directly emphasize regional cultural pride and establish spaces for modern youth to showcase organic artistry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="page-contact">
+  <div class="container section">
+    <div class="two-col" style="align-items: flex-start;">
+      <div>
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Let's build a just future together.</h2>
+        <p class="lead" style="margin-bottom:40px;">Have questions about our initiatives, achievements, or want to collaborate on an upcoming project in Kibera? Shoot us a direct line.</p>
+        
+        <div style="margin-bottom:20px;">
+          <strong>Office Address:</strong><br/>
+          Kibera Informal Settlement, Nairobi, Kenya
+        </div>
+        <div style="margin-bottom:20px;">
+          <strong>Email Address:</strong><br/>
+          <a href="mailto:wasaniisanaa@gmail.com" style="color:var(--brand-blue); font-weight:500;">wasaniisanaa@gmail.com</a>
+        </div>
+        <div style="margin-bottom:20px;">
+          <strong>Phone Line:</strong><br/>
+          <a href="tel:+254713844890" style="color:var(--brand-blue); font-weight:500;">+254 713 844 890</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h2>Send a message</h2>
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email address" required />
+        <textarea name="message" placeholder="Your feedback or query" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="brand-line"><strong>Wasanii Sanaa</strong></div>
+      <p>Art for Change, Voice for All.</p>
+    </div>
+    <div>
+      <h4>Contact Info</h4>
+      <p>Nairobi, Kenya</p>
+      <p>+254 713 844 890</p>
+      <p>wasaniisanaa@gmail.com</p>
+    </div>
+    <div>
+      <h4>Follow Our Movement</h4>
+      <div class="social-links" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+        <a href="#" target="_blank" rel="noreferrer">Facebook: Wasanii Sanaa Organization</a>
+        <a href="#" target="_blank" rel="noreferrer">X: @WasaniiO</a>
+        <a href="#" target="_blank" rel="noreferrer">Instagram: Wasanii_Sanaa Organization</a>
+        <a href="#" target="_blank" rel="noreferrer">TikTok: Wasanii Sanaa Organization</a>
+      </div>
+    </div>
+  </div>
+  <div class="copy">&copy; 2026 Wasanii Sanaa Organization. All Rights Reserved.</div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script 3.js"></script>
 </body>
 </html>
