@@ -49,12 +49,12 @@
   window.addEventListener("popstate", fromHash);
   fromHash();
 
-  // Custom Formspree silent validation redirection
+  // Custom Formspree validation redirection
   const form = document.getElementById("contactForm");
   if (form) {
     form.addEventListener("submit", async function(e) {
       e.preventDefault();
-      const submitBtn = form.querySelector('button[type=\"submit\"]');
+      const submitBtn = form.querySelector('button[type="submit"]');
       const originalText = submitBtn.innerHTML;
       
       submitBtn.disabled = true;
