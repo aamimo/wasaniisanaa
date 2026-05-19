@@ -43,6 +43,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   display: flex;
   align-items: center; justify-content: space-between;
   height: 80px;
+  position: relative;
 }
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand img { height: 48px; width: 48px; object-fit: contain; }
@@ -186,11 +187,37 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .footer .brand-line { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #fff; }
 .footer .copy { text-align: center; padding: 16px; font-size: 12px; color: rgba(255,255,255,0.5); border-top: 1px solid rgba(255,255,255,0.1); }
 
-/* Responsive adjustments */
+/* Responsive Media Queries + Mobile Navigation Pop-up Fix */
 @media (max-width: 860px) {
-  .nav { display: none; }
-  .menu-toggle { display: block; }
-  .two-col, .mv-grid, .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-  .stats { grid-template-columns: 1fr 1fr; }
-  .values { grid-template-columns: repeat(2, 1fr); }
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; left: 0; right: 0;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 24px;
+    gap: 12px;
+    box-shadow: var(--shadow-elegant);
+    z-index: 100;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .btn-donate-header {
+    display: none;
+  }
+  .two-col, .mv-grid, .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .values {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
